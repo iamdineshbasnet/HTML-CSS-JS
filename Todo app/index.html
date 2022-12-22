@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <meta name="color-scheme" content="dark"> -->
+    <title>ToDo App</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/72bcc874c6.js"></script>
+</head>
+<body>
+    
+    <div class="container">
+        <div id="todo_input_container">
+            <h1>To-Do-App</h1>
+
+            <div class="user_input_container">
+                <input type="text" id="user_input" autofocus>
+                <button id="addButton" disabled><i class="fa-solid fa-plus addBtn"></i></button>
+            </div>
+
+        </div>
+
+        <div id="todo_list_container">
+            <ul id="items_container">
+                
+            </ul>
+        </div>
+
+        <div id="clear_items">
+            <button id="clearAllButton" disabled>Remove All Tasks<i class="fa-regular fa-trash-can trashBtn"></i></button>
+        </div>
+
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+</html>

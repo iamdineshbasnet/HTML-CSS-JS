@@ -1,0 +1,117 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+    background: rgb(89, 120, 134);
+}
+.container{
+    width: 400px;
+    border-radius: 5px;
+    padding: 20px 30px;
+    background-color: rgb(35, 3, 181);
+}
+#todo_input_container{
+    text-align: center;
+}
+#todo_input_container h1{
+    color: #FFF;
+    font-size: 30px;
+    font-weight: 500;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+}
+.user_input_container{
+    margin-bottom: 30px;
+    display: flex;
+    height: 35px;
+}
+.user_input_container > input{
+    width: 100%;
+    margin-right: 10px;
+    padding: 0 5px;
+    font-size: 16px;
+    outline: none;
+}
+.user_input_container > button{
+    padding: 0 10px;
+    background: rgb(2, 195, 38);
+    border: none;
+    font-size: 14px;
+    font-weight: 500;
+    border-radius: 3px;
+    cursor: pointer;
+}
+.addBtn,
+.updateBtn{
+    font-size: 20px;
+    color: #FFF;
+}
+#addButton:disabled{
+    background: rgb(13, 129, 48);
+    color: #aaa;
+    cursor: not-allowed;
+}
+
+#items_container li{
+    width: 100%;
+    height: 40px;
+    background: #FFF;
+    padding-left: 8px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+    cursor: pointer;
+}
+li > span{
+    flex-basis: 80%;
+}
+li > button{
+    border: none;
+    outline: none;
+    height: 40px;
+    width: 40px;
+    color: #FFF;
+}
+li > button.editButton{
+    background: #ffc000;
+    cursor: pointer;
+}
+li > button.trashButton{
+    background: rgb(250, 39, 39);
+    cursor: pointer;
+}
+span.checkItem{
+    font-style: italic;
+    color: #aaa;
+    text-decoration: line-through;
+}
+#clear_items{
+    text-align: center;
+    margin-top: 30px;
+}
+button#clearAllButton{
+    border: none;
+    border-radius: 3px;
+    height: 30px;
+    padding: 0 30px;
+    background: rgb(250, 39, 39);
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+}
+.trashBtn{
+    margin-left: 10px;
+}
+#clearAllButton:disabled{
+    background: rgb(150, 64, 64);
+    color: #aaa;
+    cursor: not-allowed;
+}
