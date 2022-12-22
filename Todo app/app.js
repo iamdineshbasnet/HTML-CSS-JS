@@ -76,8 +76,12 @@ const disableClearButton = function(){
     }
     else{
         clearAllButton.disabled = true
-    }
-    
+    }  
+}
+
+const completeButton = function (){
+    const li = this
+    li.classList.toggle("checkItem")
 }
 
 
@@ -87,6 +91,9 @@ const eventHandler = (listItem)=>{
 
     const editButton = listItem.querySelector(".editButton");
     editButton.onclick = editFn;
+
+    const completeBtn = listItem
+    completeBtn.onclick = completeButton
 }
 const disableInputButton = function(){
     if(userInput.value.length < 2){

@@ -88,7 +88,7 @@ li > button.trashButton{
     background: rgb(250, 39, 39);
     cursor: pointer;
 }
-span.checkItem{
+.checkItem{
     font-style: italic;
     color: #aaa;
     text-decoration: line-through;
