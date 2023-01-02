@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: fira code;
+}
+body{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #0097e6;
+}
+.title{
+    margin-bottom: 50px;
+}
+
+.container{
+    position: relative;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.text_box{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #FFF;
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 0 3px #0097e6;
+}
+.counter_box{
+    width: 300px;
+    height: 90px;
+    background: rgba(255, 255, 255, .5);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 30px;
+}
+button{
+    background: transparent;
+    border: none;
+    width: calc(100% - 200px);
+    cursor: pointer;
+}
+button:disabled{
+    cursor: not-allowed;
+}
+.icon{
+    font-size: 30px;
+    color: #FFF;
+}
+.reset_box{
+    position: absolute;
+    bottom: -70px;
+}
+.reset_box > button{
+    width: 100px;
+    height: 30px;
+    border: 1px solid #FFF;
+    border-radius: 3px;
+    background: rgba(255, 255, 255, .5);
+    font-size: 20px;
+    font-weight: 500;
+}
+#reset:disabled{
+    cursor: not-allowed;
+}
